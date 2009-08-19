@@ -1,6 +1,5 @@
 ---
 layout: main
-title: First Blog Post
+title: Coming soon...
 ---
 # {{ page.title }}
-**Best blog ever?**

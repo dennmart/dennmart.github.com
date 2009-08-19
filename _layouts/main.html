@@ -2,20 +2,69 @@
   "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <title>{{ page.title }}</title>
-  <meta name="author" content="Dennis Martinez" />
+  <link rel="stylesheet" href="/css/reset.css" type="text/css">
   <link rel="stylesheet" href="/css/main.css" type="text/css">
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css">
+  <script type="text/javascript" src="/js/curvycorners.js"></script>
+  <script type="text/JavaScript">
+    addEvent(window, 'load', initCorners);
+    function initCorners() {
+      var setting = {
+        tl: { radius: 6 },
+        tr: { radius: 6 },
+        bl: { radius: 6 },
+        br: { radius: 6 },
+        antiAlias: true
+      }
+      curvyCorners(setting, ".rounded_corners");
+      curvyCorners(setting, ".rounded_corners_blue");
+    }
+  </script>
 </head>
-
 <body>
-  <div id="container">
-    <div id="header">
-      Dennis Martinez - Development Blog
+  <div id="header">
+    <div id="header_container">
+      <div id="site_id">
+        <h1><a href="http://development.dennmart.com/">Dennis Martinez - Development Blog</a></h1>
+      </div>
     </div>
-    <div id="content">
-      
-      {{ content }}
+    <p class="clear"></p>
+  </div>
+  
+  <div id="content">
+    <div id="content_container">
+      <div id="main">
+        {{ content }}
+      </div>
+      <div id="sidebar">
+        <div id="blog_info" class="rounded_corners">
+          <h2>What is this blog?</h2>
+          <p>
+            This blog will be my notepad and my crazy experiments in the software development world. 
+            This will serve not only to know where I currently stand or where I'm headed, but also to know where I've been.
+          </p>
+          <p>Want more? Follow me on <a href="http://twitter.com/dennmart">Twitter</a>, or check out what I've been up to on <a href="http://github.com/dennmart">GitHub</a>.</p>
+        </div>
+        <br>
+        <div id="recent_posts" class="rounded_corners_blue">
+          <h2>Recent Posts</h2>
+          {% for post in site.posts limit:5 %}
+            <p>
+              {{ post.date | date_to_long_string }} - <a href="{{ post.url }}">{{ post.title }}</a>
+            </p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <p class="clear"></p>
+  </div>
+  
+  <div id="footer">
+    <div id="footer_container">
+      &copy 2009 Dennis Martinez - All content on this page is solely my opinion, and the opinion of no one else.<br />
+      Hosted by <a href="http://pages.github.com/">GitHub Pages</a> | Powered by <a href="http://github.com/mojombo/jekyll/">Jekyll</a>
     </div>
   </div>
 </body>

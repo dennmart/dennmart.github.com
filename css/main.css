@@ -1,46 +1,127 @@
-/* CSS Reset */
-
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
-body {line-height:1.5;}
-table {border-collapse:separate;border-spacing:0;}
-caption, th, td {text-align:left;font-weight:normal;}
-table, td, th {vertical-align:middle;}
-blockquote:before, blockquote:after, q:before, q:after {content:"";}
-blockquote, q {quotes:"" "";}
-a img {border:none;}
-
+/* CONTAINER */
 body {
-	background-color: #FFF;
-	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #193441;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1 {
-	font-size: 1.8em;
-	font-weight: bold;
+p {
+  margin-bottom: 10px;
 }
 
-#container {
-	width: 900px;
-	margin: 0 auto;
-}
-
-/* Header */
+/* HEADER */
 #header {
-	position: relative;
-	height: 100px;
+  background-color: #083643;
+  color: #FFF;
 }
 
-/* Content */
+#header_container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+#header_container #site_id {
+  padding: 10px;
+  float: left;
+}
+
+#header_container #site_id h1 a {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* CONTENT */
+
 #content {
-	
+  background: transparent url(../img/background.jpg) repeat-y scroll top center;
 }
 
-#content p {
-	margin-bottom: 10px;
+#content_container {
+  width: 940px;
+  margin: 0 auto;
 }
 
-/* Footer */
+#content_container #main {
+  padding: 10px;
+  width: 625px;
+  float: left;
+}
+
+#content_container #sidebar {
+  padding: 10px;
+  width: 275px;
+  float: right;
+}
+
+#sidebar h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#sidebar a {
+  text-decoration: none;
+}
+
+#content_container h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+
+}
+
+/* POSTS */
+
+#content_container .post {
+  margin-bottom: 30px;
+}
+
+#content_container .post a {
+  text-decoration: none;
+}
+
+/* FOOTER */
 #footer {
-	position: relative;
-	height: 50px;
+  background-color: #083643;
+}
+
+#footer_container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#footer_container a {
+  text-decoration: none;
+  color: #D1DBBD;
+}
+
+/* MISCELANEOUS */
+.clear {
+  clear: both;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+}
+
+.rounded_corners{
+  padding: 10px;
+  background-color: #B1E001;
+  border: 1px solid #B1E001;
+
+  /* Do rounding (native in Safari, Firefox and Chrome) */
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+
+.rounded_corners_blue{
+  padding: 10px;
+  background-color: #DDEEF6;
+  border: 1px solid #DDEEF6;
+
+  /* Do rounding (native in Safari, Firefox and Chrome) */
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
 }

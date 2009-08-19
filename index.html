@@ -5,6 +5,7 @@ title: Dennis Martinez - Development Blog
 
 {% for post in site.posts %}
   <div class="post">
+    {{ post.date | date_to_long_string }}
     {{ post.content }}
   </div>
 {% endfor %}

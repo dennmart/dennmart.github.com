@@ -12,6 +12,6 @@ So, I decided to use this little space on the web as an online journal, so I can
 
 Another reason why I wanted to do this is because it will be somewhat educational for me to look back a year from now at the things I've been doing and working on. After all, like Momma always said, "there's an awful lot you could tell about a person by their blog - where they're going, where they've been." I've written lots of blogs... Okay, so Forrest Gump's Momma didn't talk about blogs (I'm guessing they didn't have any blogs at the time in Greenbow, Alabama), but you should understand what I'm trying to say.
 
-Finally, a huge thanks for this blog's existence goes out to the guys at [GitHub](http://github.com/) for their [GitHub Pages](http://pages.github.com), and to all the contributors to [Jekyll](http://jekyllrb.com/) for putting out an awesome and easy to use product to create sites like this one.
+Finally, a huge thanks for this blog's existence goes out to the guys at [GitHub](http://github.com/) for their [GitHub Pages](http://pages.github.com), and to all the contributors to [Jekyll](http://jekyllrb.com/) for putting out an awesome and easy to use product to create sites like this one. If you're curious to see the source behind the site, feel free to go to the [GitHub repo](http://github.com/dennmart/dennmart.github.com) where this is hosted. There's not much to see there, which is sort of the point - This is really, really easy to do.
 
 I'll be adding more soon, so keep an eye out for new changes!

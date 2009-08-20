@@ -8,6 +8,14 @@ p {
   margin-bottom: 10px;
 }
 
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
 /* HEADER */
 #header {
   background-color: #083643;

@@ -16,6 +16,26 @@ em {
   font-style: italic;
 }
 
+pre {
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+ol, ul {
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+ol li {
+	list-style-type: decimal;
+}
+
+ul li {
+	list-style-type: square;
+}
+
 /* HEADER */
 #header {
   background-color: #083643;

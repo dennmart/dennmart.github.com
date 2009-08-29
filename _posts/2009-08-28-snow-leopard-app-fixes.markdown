@@ -30,4 +30,6 @@ I've mentioned before that I use [Jekyll](http://github.com/mojombo/jekyll/tree/
 
 Turns out there were some changes with the Ruby libraries that are installed with Leopard versus those installed with Snow Leopard. To fix this, just install the version of [Xcode](http://developer.apple.com/TOOLS/Xcode/) that's bundled with Snow Leopard (insert your Snow Leopard installation CD and look under the Optional Installs folder) to update all the libraries in the system.
 
+***Edit:*** It seems like I forgot the small, tiny issue that Snow Leopard now uses 64-bit libraries. Since all previous Ruby-related libraries in your system were installed using 32-bit libraries in Leopard, none of the Ruby Gems will work. You can easily solve this using `gem pristine --all` to reinstall all your gems from the source cache.
+
 Hopefully, that's the last of my incompatibilities. Should something else arise, I'll add more to this post as I find them.

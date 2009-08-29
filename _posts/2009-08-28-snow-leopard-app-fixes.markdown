@@ -22,6 +22,8 @@ Since one of the early development releases of Snow Leopard in April, there has 
 
 There's a temporary fix at the end in that ticket (*Snow Leopard Compatibility.zip*), which just install some macros to add this functionality again. It's just what's needed to get it working again. I think it's safe to assume that, like a million other things, this will be [fixed by Textmate 2](http://fixedbytm2.com/).
 
+***EDIT:*** On August 29, there was a new TextMate release (version 1.5.9 / revision 1509) which includes these fixes. This update can be automatically installed by going to *Textmate > Preferences* and going to the *Software Updates* section.
+
 **Ruby / Ruby Gems**
 
 I've mentioned before that I use [Jekyll](http://github.com/mojombo/jekyll/tree/master) to generate this blog. Just as I was about to send this post up to GitHub, I decided to check out if my Markdown formatting was correct. Instead, I got a nasty error message from Ruby Gems, stating that my [RDiscount](http://github.com/rtomayko/rdiscount/tree/master) gem wasn't working. When I tried to do a `gem update`, I got more errors.

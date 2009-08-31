@@ -12,6 +12,8 @@ I just installed it a few minutes ago, and it couldn't go smoother. The upgrade 
 
 I had read so many messages on Twitter about developers mentioning that [MacPorts](http://www.macports.org/) didn't work with Snow Leopard. This worried me, as I use MacPorts quite a lot, especially since I want to learn lots of new things. Lucky for me (and others like me), I went to the MacPorts site this morning and saw that a new release of MacPorts, with Snow Leopard compatibility, was released recently. I simply downloaded the new version (version 1.8.0) and installed it over my previous installation, and all was good again.
 
+***Edit:*** There are still some packages in MacPorts that refuse to compile. [Here's a list](http://trac.macports.org/wiki/snc/snowleopard) of the current status of the compatibility of some packages.
+
 **MySQL**
 
 MySQL works just fine with Snow Leopard. The problem is that in my case, the installation of Snow Leopard reset the paths I had set (the `/etc/paths` file), so none of the binaries was in my path. This was just a matter of adding the path where MySQL was (if you installed the Mac OS X package from [MySQL's official site](http://dev.mysql.com/), it should be installed in `/usr/local/mysql`).
@@ -22,7 +24,7 @@ Since one of the early development releases of Snow Leopard in April, there has 
 
 There's a temporary fix at the end in that ticket (*Snow Leopard Compatibility.zip*), which just install some macros to add this functionality again. It's just what's needed to get it working again. I think it's safe to assume that, like a million other things, this will be [fixed by Textmate 2](http://fixedbytm2.com/).
 
-***EDIT:*** On August 29, there was a new TextMate release (version 1.5.9 / revision 1509) which includes these fixes. This update can be automatically installed by going to *Textmate > Preferences* and going to the *Software Updates* section.
+***Edit:*** On August 29, there was a new TextMate release (version 1.5.9 / revision 1509) which includes these fixes. This update can be automatically installed by going to *Textmate > Preferences* and going to the *Software Updates* section.
 
 **Ruby / Ruby Gems**
 

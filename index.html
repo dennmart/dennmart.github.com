@@ -3,9 +3,19 @@ layout: main
 title: Dennis Martinez - Development Blog
 ---
 
-{% for post in site.posts %}
+{% for post in site.posts limit: 5 %}
   <div class="post">
     {{ post.date | date_to_long_string }}
     {{ post.content }}
   </div>
 {% endfor %}
+
+<h2>Older Posts</h2>
+<div id="older_posts">
+  {% for post in site.posts offset: 5 %}
+    <p>
+      {{ post.date | date_to_long_string }} - 
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </p>
+  {% endfor %}
+</div>

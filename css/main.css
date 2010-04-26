@@ -97,6 +97,12 @@ ul li {
   margin-bottom: 10px;
 }
 
+#content_container h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 /* POSTS */
 
 #content_container .post {
@@ -105,6 +111,11 @@ ul li {
 
 #content_container .post a {
   text-decoration: none;
+}
+
+#older_posts p {
+  line-height: 10px;
+  font-size: 0.9em;
 }
 
 /* FOOTER */
